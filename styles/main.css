@@ -275,6 +275,9 @@ header {
     gap: 9px;
     max-width: 152px;
 }
+.menu-grid-btn:hover {
+    background-color: #F37335;
+}
 .menu-grid-text {
     font-weight: 700;
     text-transform: uppercase;
@@ -327,6 +330,9 @@ header {
     text-decoration: none;
     font-weight: 400;
 }
+.footer-list a:hover {
+    color: yellow;
+}
 .footer-item span {
     color: #DEDEDE;
     display: block;
@@ -335,6 +341,9 @@ header {
 }
 .footer-list-tel {
     margin-top: 0;
+}
+.footer-list-tel a:hover {
+    color: white;
 }
 .footer-list-tel li {
     margin-bottom: 12px;
@@ -347,5 +356,4 @@ header {
 .footer-list {
     padding: 0;
     list-style-type: none;
-
 }
