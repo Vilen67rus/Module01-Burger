@@ -18,6 +18,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -141,7 +147,8 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 100px;
+    padding: 100px 100px 120px;
+    margin-bottom: 100px;
 }
 .banner-title {
     font-weight: 900;
@@ -179,6 +186,166 @@ header {
     font-size: 14px;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 26px;
+    padding: 18px 25px;
     text-transform: uppercase;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    /* ссылка становится прозрачная изменения при наведении*/
+    color: #FBB731;
+}
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1B2A49;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 34px;
+}
+.menu-select {
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../images/arrow.svg);
+    background-size: 12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+    text-align: center;
+    margin-bottom: 100px;   
+}
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    /* позволит спрятать и не показвать картинку, которая может вылезать из блока*/
+    margin-bottom: 23px;
+}
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* сохранить пропорции картинки, не зависимо, какие мы указали значение в высоте и ширине*/
+    width: 100%;
+    height: 430px;
+}
+.menu-grid-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    text-align: center;
+    margin: 0;
+}
+.menu-grid-prise {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #979797;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+.menu-grid-btn {
+    background: #FBB731;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
+    /* включает палец вместо стрелки наведения */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 9px;
+    max-width: 152px;
+}
+.menu-grid-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1E2F40;
+    font-size: 14px;
+}
+.menu-grid-icon {
+    background-image: url(../images/cart-menu.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 140px;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    margin-top: 0;  
+}
+.footer-list li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-list a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
+    font-size: 20px;
+    font-weight: 900;
+    color: #FBB731;
+}
+.footer-list {
+    padding: 0;
+    list-style-type: none;
+
 }
