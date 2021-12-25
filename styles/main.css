@@ -148,7 +148,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 100px 100px 120px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .banner-title {
     font-weight: 900;
@@ -189,17 +189,21 @@ header {
     padding: 18px 25px;
     text-transform: uppercase;
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover {
     background-color: transparent;
     /* ссылка становится прозрачная изменения при наведении*/
     color: #FBB731;
 }
+.menu {
+    padding-top: 20px;
+}
 .menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 34px;
+    margin-bottom: 37px;
 }
 .menu-title {
     font-size: 44px;
@@ -283,6 +287,7 @@ header {
     text-transform: uppercase;
     color: #1E2F40;
     font-size: 14px;
+    transition: 0.3s;
 }
 .menu-grid-icon {
     background-image: url(../images/cart-menu.svg);
@@ -356,6 +361,32 @@ header {
 .footer-list {
     padding: 0;
     list-style-type: none;
+}
+
+/* кнопка наверх button */
+
+.button-up {
+    background-color: #FBB731;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1E2F40;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.button-up:hover {
+    background-color: #F37335;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
 }
 /* Style INDEX */
 
