@@ -143,7 +143,7 @@ header {
     margin: 0 auto;
 }
 .banner-box {
-    background-image: url(../images/banner.svg);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 center;
@@ -631,8 +631,8 @@ header {
     .footer-list + .footer-list-tel {
         display: block;
     }
-
 }
+
 @media (max-width: 765px) {
     nav {
         display: none;
@@ -646,6 +646,7 @@ header {
     .button-up.visible {
         display: none;
     }
+    
 }
 @media (max-width: 567px) {
     .header {
@@ -759,7 +760,6 @@ header {
     .footer-tel {
         grid-area: tel;
     }
-
 }
 @media (max-width: 360px) {
     .header-logo {
